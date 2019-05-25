@@ -3,16 +3,10 @@ import java.util.List;
 
 public class Main {
 
-
-
     public static void main(String[] args) {
-
-
         System.out.println(expandedForm(12));
-
     }
-
-
+    
     public static String expandedForm(int num){
 
         StringBuilder stbud = new StringBuilder();
@@ -22,9 +16,8 @@ public class Main {
             lista.add(num%10);
             num = num/10;
         }
-
+        
         int temp;
-
         for (int i=lista.size()-1; i>=0; i--){
             if (lista.get(i) != 0){
                 temp = lista.get(i) * (int) Math.pow(10,i);
