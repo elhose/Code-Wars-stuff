@@ -1,7 +1,5 @@
 public class Main {
 
-
-
     public static void main(String[] args) {
           System.out.println(longest( "abedadasfas","acdkhukjklsdfsfd"));
     }
@@ -17,7 +15,6 @@ public class Main {
         while(!stop){
             for (int i=0; i<stbud.length(); i++){
                 if (i+2 <= stbud.length() && stbud.substring(i,i+1).compareTo(stbud.substring(i+1,i+2)) > 0 ){
-
                     temp = stbud.substring(i,i+1);
                     stbud.replace(i,i+1,stbud.substring(i+1,i+2));
                     stbud.replace(i+1,i+2,temp);
